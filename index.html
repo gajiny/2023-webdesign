@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="/">
+    <meta property="og:title" content="2023년 유한대학교 시각디자인과">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/yuhanvd.png">
+    <meta property="og:description" content="2023년 유한대학교 시각디자인과">   
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!--Java Script-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/content.js"></script>
+    <title>Paul Land</title>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="overlay-image"></div>
+    <div class="header">
+        <h1>PAUL LAND</h1>
+    </div>
+
+    <div class="bg-text">
+        <p>Simplicity Is Not The Goal</p>
+        <h1>PAUL<br>LAND</h1>
+    </div>
+
+    <nav class="navbar">
+        <button data-target="Introduce" class="navbar-button">Introduce</button>
+        <button data-target="Works" class="navbar-button">Works</button>
+        <button data-target="Design" class="navbar-button">Design</button>
+        <button data-target="Philosophy" class="navbar-button">Philosophy</button>
+    </nav>
+
+    <section id="Introduce" class="section-content">
+        <img src="/assets/img/content/Introduce.svg">
+        <img class="next-button" data-target="Works">
+    </section>
+    <section id="Works" class="section-content">
+        <img src="/assets/img/content/Works.svg">
+        <img class="prev-button" data-target="Introduce">
+        <img class="next-button" data-target="Design">
+    </section>
+    <section id="Design" class="section-content">
+        <img src="/assets/img/content/Design.svg">
+        <img class="prev-button" data-target="Works">
+        <img class="next-button" data-target="Philosophy">
+    </section>
+    <section id="Philosophy" class="section-content">
+        <img src="/assets/img/content/Philosophy.svg">
+        <img class="prev-button" data-target="Design">
+    </section>
+</body>
+
+</html>
